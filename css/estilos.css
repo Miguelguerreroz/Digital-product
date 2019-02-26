@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/*------Vaiables*/
+:root{
+	--green-color: #7ACC2D;
+	--white-color: #ffffff;
+	--black-color: #313337;
+
+	/*----Espaciado*/
+	--space: 10px;
+
+	/*tamano*/
+	--normal: 12px;
+
+	/*box shadow*/
+	--sombra: 0 0 2px 1px #e6e5e9;
+}
+
+/*------Vaiables*/
+html,body{
+  margin: 0;
+  padding: 0;
+	font-size: var(--normal);
+	font-family: 'Open Sans', sans-serif;
+}
+nav{
+	background-color: var(--green-color);
+	padding: var(--space);
+	color: var(--white-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+nav ul{
+	display: flex;
+	
+}
+nav ul li{
+	padding-left: 20px;
+	list-style: none;
+	
+}
+nav ul li a{
+	text-decoration: none;
+	color: var(--black-color);
+	font-weight: bold
+}
+nav ul li a:hover{
+	color: var(--white-color); 
+}
+labe, p{
+	font-size: var(--normal);
+}
+
+/* -------------- Main section*/
+.main_section{
+	padding: 10%;
+	text-align: center;
+}
+.main_section h1{
+	font-size: 30px;
+	font-weight: bold;
+	
+}
+.products{
+	background-image: url("../images/curve.png");
+	height: 100px;
+	background-size: cover;
+	background-position: center top;
+	padding: 10%;
+	display: flex;
+	justify-content: center;
+}
+.product{
+	margin: var(--space);
+	margin-top: -18%
+}
+.product .content{
+	padding: 15px;
+	background-color: var(--white-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	box-shadow: var(--sombra);
+	box-sizing: border-box;
+}
+.main_button{
+	background-color:var(--green-color);
+	padding: var(--space);
+	width: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 17px;
+	color: white;
+	transition: .2s;
+	border-radius: 2px;
+}
+.main_button:hover{
+	background-color: #5e9e22;
+}
+
+/*-------section atributos*/
+
+.atributos{
+	padding: 140px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.atributos img{
+	width: 150px;
+	transition: .2s;
+}
+.atributos img:hover{
+	transform: scale(1.1);
+}
+.atributo_art{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	margin: 10px;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.atributo_art p{
+	width: 70%;
+	text-align: justify;
+}
+
+/*Line separacionde seccion*/
+
+hr{
+	width: 95%;
+	background-color: dimgray;
+	border-width: .5px;
+}
+
+/*-------Section menciones*/
+.contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.menciones{
+	padding: 140px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+.menciones_person{
+	width: 270px;
+	box-shadow: 1px 1px 10px 1px #e6e5e9;
+	margin: 5px;
+	transition: .2s;
+}
+.menciones h2{
+	font-size: 30px
+}
+.menciones_person h3{
+	font-size: 20px;
+	margin: 0;
+	padding: 5px
+}
+.menciones_person p{
+	padding: 5px;
+}
+.menciones img{
+	width: 100%;
+	height: 130px;
+	object-fit: cover;
+}
+.menciones_person:hover{
+	transform: scale(.9);
+}
+
+/*-----Footer*/
+footer{
+	padding: 10px;
+	background-color: #313337;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Moddulo de pago venta*/
+.modulo-pago{
+	background-color: var(--white-color);
+	box-shadow: var(--sombra);
+	padding: var(--space);
+	margin: 10px
+}
+.modulo_pago_images{
+	max-width: 150px;
+	margin: 0 auto
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+form label{
+	margin: 10px 0px
+}
+form .data{
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid var(--black-color);
+	box-sizing: border-box;
+}
+.btn{
+	margin-top: 10px;
+	background-color: var(--green-color);
+	padding: var(--space);
+	color: var(--white-color);
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: .8;
+	border: 1px solid
+}
+.btn:hover{
+	opacity: 1;
+}

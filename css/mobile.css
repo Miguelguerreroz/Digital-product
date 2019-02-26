@@ -1,0 +1,27 @@
+@media(max-width:600px){
+	body{
+		background-color: ;
+	}
+	.main_section{
+		display: block;
+	}
+	.products{
+		flex-wrap: wrap;
+		height: 100%;
+	}
+	.contenedor{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.product{
+		margin-top: auto;
+	}
+	.atributos{
+		flex-direction: column;
+		padding: 20px
+
+	}
+	.atributo_art h2{
+		text-align: center;
+	}
+}
